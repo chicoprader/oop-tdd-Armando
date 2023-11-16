@@ -4,5 +4,7 @@ namespace LateStatic;
 
 class Mac extends Computer
 {
-    //TODO
+    public static $brand = 'Mac';
+    
 }
+

@@ -25,5 +25,13 @@ class ReciboTest extends TestCase
     public function test_if_recibo_with_init_array_accepts_to_add_another_item()
     {
         //TODO
+        // init array
+        $recibo = new Recibo(['Hamburguesa paps' => 120.34, 'Malteada' => 76]);
+
+        // add another item
+        $recibo->addItem('Alitas de Hooters', 123.33);
+        // test
+        $this->assertEquals(370.82, $recibo->print());
+
     }
 }

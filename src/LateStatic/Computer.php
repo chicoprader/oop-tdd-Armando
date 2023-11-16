@@ -8,6 +8,6 @@ class Computer
 
     final public static function getBrand()
     {
-        //TODO
+        return self::$brand;
     }
 }

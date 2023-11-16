@@ -12,5 +12,15 @@ namespace App;
 
 class Factura
 {
+    private $numero;
 
+    public function __construct($numero)
+    {
+        $this->numero = $numero;
+    }
+
+    public function __toString()
+    {
+        return json_encode(['factura' => $this->numero]);
+    }
 }

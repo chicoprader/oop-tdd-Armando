@@ -1,6 +1,6 @@
 {
   "require-dev": {
-    "phpunit/phpunit": "^6.4.3"
+    "phpunit/phpunit": "^9.6.13"
   },
   "autoload": {
     "psr-4": {
@@ -8,6 +8,7 @@
       "Properties\\": "./src/Properties",
       "LateStatic\\": "./src/LateStatic",
       "Db\\": "./src/Database"
-    }
+    },
+    "files": ["./src/helpers.php"]
   }
 }

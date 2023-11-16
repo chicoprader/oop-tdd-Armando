@@ -15,4 +15,12 @@ class FacturaConDescuento extends Factura
     {
         return '$800';
     }
+
+ public function print()
+ {
+     $total = $this->getTotal();
+     //return parent::print();
+     return $total;
+ }
 }
+
