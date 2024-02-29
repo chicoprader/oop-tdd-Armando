@@ -2,6 +2,8 @@
 
 namespace App;
 
+
+
 /*
  * Ejercicio
  * Implementar la clase Factura para que funcione el código de ejemplo
@@ -23,4 +25,5 @@ class Factura
     {
         return json_encode(['factura' => $this->numero]);
     }
+
 }

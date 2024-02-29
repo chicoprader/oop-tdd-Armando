@@ -10,5 +10,8 @@
       "Db\\": "./src/Database"
     },
     "files": ["./src/helpers.php"]
+  },
+  "require": {
+    "ext-json": "*"
   }
 }

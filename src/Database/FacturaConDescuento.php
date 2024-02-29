@@ -11,16 +11,14 @@ namespace Db;
 
 class FacturaConDescuento extends Factura
 {
-    private function getTotal()
+    public function print():string
+    {
+        return $this->getTotal();
+
+    }
+    private function getTotal(): string
     {
         return '$800';
     }
-
- public function print()
- {
-     $total = $this->getTotal();
-     //return parent::print();
-     return $total;
- }
 }
 

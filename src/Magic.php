@@ -54,9 +54,13 @@ class Magic
             return 'Hello World()';
         }
         else {
-            return 'Hola llamando a $radomWord()';
+            return 'Hola llamando a $randomWord()';
         }
 
+    }
+    public function __call($name, $arguments)
+    {
+        $this->randomMethod( $name );
     }
 }
 
