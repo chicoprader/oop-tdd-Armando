@@ -2,47 +2,16 @@
 
 namespace App;
 
-class Ajax {
-
-    private $url;
-    private $successCallback;
-
-    public function __construct(array $options)
+class Ajax
     {
-        if (!isset($options['url'])) {
-            throw new \InvalidArgumentException('The "url" option is required.');
-        }
-
-        $this->url = $options['url'];
-        $this->successCallback = $options['success'] ?? null;
-    }
-
-    public static function create(array $items)
+    public static function ajax($url, callable $callback)
     {
-        return new self($items);
-    }
 
-    public function getData()
-    {
-        $json = $this->fetchDataFromUrl($this->url);
-
-        if (is_callable($this->successCallback)) {
-            call_user_func($this->successCallback, $json);
-        }
-
-        return $json;
-    }
-
-    private function fetchDataFromUrl($url)
-    {
         $data = file_get_contents($url);
-        var_dump($data);
-
-        if ($data === false) {
-            throw new \RuntimeException('Failed to fetch data from the URL.');
-        }
-
-        return json_decode($data, true);
-}
-
-}
+        $callback([
+            'success' => true,
+            'data' => $data
+        ]);
+    }
+    
+    }
