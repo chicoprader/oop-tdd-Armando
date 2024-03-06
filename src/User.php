@@ -9,10 +9,10 @@ namespace App;
  * TIP: Poner atención en el funcionamiento de las interfaces
  */
 
-
 class User
 {
     private $name;
+
     private $notificator;
 
     public function __construct($name, Notificable $notificator)

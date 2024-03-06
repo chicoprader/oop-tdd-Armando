@@ -29,6 +29,7 @@ class PrivateTest extends TestCase
 
     /**
      * @expectedException \Exception
+     *
      * @expectedExceptionMessage Debes ingresar un número
      */
     public function test_if_price_with_an_string_throws_an_exception()
@@ -41,6 +42,7 @@ class PrivateTest extends TestCase
 
     /**
      * @expectedException \Exception
+     *
      * @expectedExceptionMessage El precio está indefinido
      */
     public function test_if_null_price_throws_an_exception()
@@ -60,6 +62,7 @@ class PrivateTest extends TestCase
 
     /**
      * @expectedException \Exception
+     *
      * @expectedExceptionMessage Debes ingresar un número
      */
     public function test_if_child_price_with_an_string_throws_an_exception()
@@ -69,5 +72,4 @@ class PrivateTest extends TestCase
         $factura->price = '16.3x';
         $this->assertEquals(18.9, $factura->getTotal());
     }
-
 }

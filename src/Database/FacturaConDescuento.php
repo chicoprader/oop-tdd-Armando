@@ -8,17 +8,16 @@
 
 namespace Db;
 
-
 class FacturaConDescuento extends Factura
 {
-    public function print():string
+    public function print(): string
     {
         return $this->getTotal();
 
     }
+
     private function getTotal(): string
     {
         return '$800';
     }
 }
-

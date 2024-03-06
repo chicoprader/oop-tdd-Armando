@@ -4,5 +4,5 @@ namespace App;
 
 interface Notificable
 {
-    public function notify(Object $subject);
+    public function notify(object $subject);
 }

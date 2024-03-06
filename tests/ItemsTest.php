@@ -25,6 +25,7 @@ class ItemsTest extends TestCase
 
     /**
      * @expectedException \Exception
+     *
      * @expectedExceptionMessage No se pueden procesar cadenas de texto
      */
     public function test_if_string_is_passed_an_exception_is_thrown()
@@ -32,5 +33,4 @@ class ItemsTest extends TestCase
         $items = new Items('8', 1, 2, 3);
         $this->assertEquals(6, count($items));
     }
-
 }

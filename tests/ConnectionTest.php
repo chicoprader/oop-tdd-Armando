@@ -1,10 +1,10 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use Db\Connection;
-use Db\PersistentConnection;
 use Db\Drivers\MySql;
 use Db\Drivers\Oracle;
+use Db\PersistentConnection;
+use PHPUnit\Framework\TestCase;
 
 class ConnectionTest extends TestCase
 {
@@ -29,5 +29,4 @@ class ConnectionTest extends TestCase
         $this->assertEquals('Connected to: Db\Drivers\MySql', $driver);
         $this->assertEquals('Persistent', $connection->getType());
     }
-
 }

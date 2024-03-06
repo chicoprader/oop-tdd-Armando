@@ -10,25 +10,25 @@ namespace App;
  */
 /**
  * Class Recibo
- *
- * @package App
  */
-class Recibo {
-
+class Recibo
+{
     const IVA = 1.16;
+
     public array $items = [];
 
-    public function __construct( array $items = [] )
+    public function __construct(array $items = [])
     {
         foreach ($items as $name => $price) {
             $this->addItem($name, $price);
         }
     }
 
-    public function addItem( $name, $price ): void
+    public function addItem($name, $price): void
     {
         $this->items[] = ['name' => $name,  'price' => $price];
     }
+
     public function print(): string
     {
         $total = 0;

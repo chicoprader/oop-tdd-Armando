@@ -1,6 +1,5 @@
 <?php
 
-use Db\Factura;
 use PHPUnit\Framework\TestCase;
 
 class FacturaDbTest extends TestCase
@@ -9,6 +8,6 @@ class FacturaDbTest extends TestCase
     {
         $factura = new \Db\FacturaConDescuento();
         $total = $factura->print();
-        $this->assertEquals('$800',$total);
+        $this->assertEquals('$800', $total);
     }
 }
