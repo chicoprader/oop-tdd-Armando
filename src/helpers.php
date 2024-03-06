@@ -6,5 +6,5 @@ function ajax($url, $callback)
     $data['data'] = $resultado;
     $data['success'] = true;
     $callback($data);
-    
+
 }

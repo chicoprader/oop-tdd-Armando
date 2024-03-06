@@ -1,12 +1,13 @@
-<?php namespace App\Notificators;
-use App\Notificable;
+<?php
+
+namespace App\Notificators;
+
 use App\Object;
 
 class EmailNotification
 {
-    public function notify(Object $subject)
+    public function notify(object $subject)
     {
 
     }
-
 }

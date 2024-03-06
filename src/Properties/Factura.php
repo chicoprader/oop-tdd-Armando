@@ -2,10 +2,10 @@
 
 namespace Properties;
 
-
 class Factura
 {
     private $price;
+
     /**
      * Factura constructor.
      */
@@ -23,5 +23,4 @@ class Factura
     {
         return $this->price;
     }
-
 }

@@ -8,7 +8,7 @@ class AjaxCallbackTest extends TestCase
     {
         ajax('https://jsonip.com', function ($data) {
             $this->assertTrue($data['success']);
-            $this->assertStringStartsWith('{"ip',$data['data']);
+            $this->assertStringStartsWith('{"ip', $data['data']);
         });
     }
 }

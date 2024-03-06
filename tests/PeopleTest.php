@@ -6,9 +6,10 @@ use PHPUnit\Framework\TestCase;
 class PeopleTest extends TestCase
 {
     private $people;
+
     private $randomWord;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->people = new People('Oscar', 33, 10);
@@ -47,7 +48,7 @@ class PeopleTest extends TestCase
 
     public function test_if_string_object_prints_all_signature()
     {
-        $this->assertEquals('{"private":{"name":"Oscar","age":33,"salary":10},"public":[{"' . $this->randomWord . '":"lol"},{"fino":true}]}',
-            (string)$this->people);
+        $this->assertEquals('{"private":{"name":"Oscar","age":33,"salary":10},"public":[{"'.$this->randomWord.'":"lol"},{"fino":true}]}',
+            (string) $this->people);
     }
 }

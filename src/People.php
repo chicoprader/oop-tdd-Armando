@@ -16,9 +16,13 @@ use Iterator;
 class People implements Iterator
 {
     private $name;
+
     private $age;
+
     private $salary;
+
     private $attrs;
+
     private $current = 3;
 
     public function __construct($name, $age, $salary)
@@ -47,8 +51,7 @@ class People implements Iterator
     {
         return json_encode([
             'private' => '',
-            'public' => ''
+            'public' => '',
         ]);
     }
-
 }

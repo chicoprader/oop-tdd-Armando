@@ -27,5 +27,4 @@ class ProtectedTest extends TestCase
         $getTotalIsFinal = $reflection->getMethod('getTotal')->isFinal();
         $this->assertTrue($getTotalIsFinal);
     }
-
 }

@@ -2,3 +2,4 @@ name: ejercicios
 recipe: lamp
 config:
   webroot: .
+  php: 8.2

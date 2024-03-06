@@ -15,5 +15,4 @@ class FacturaConDescuento extends Factura
     {
         //TODO
     }
-
 }

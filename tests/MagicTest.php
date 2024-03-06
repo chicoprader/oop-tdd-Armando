@@ -21,15 +21,15 @@ class MagicTest extends TestCase
         $randomWord = uniqid('randomMethod', false);
         $result5 = $magic->{$randomWord}();
 
-        $this->assertEquals('Hola llamando a queHayAmigos()',$result1);
+        $this->assertEquals('Hola llamando a queHayAmigos()', $result1);
 
-        $this->assertEquals('Hola llamando a nofunciona()',$result2);
+        $this->assertEquals('Hola llamando a nofunciona()', $result2);
 
-        $this->assertEquals('Hello World',$result3);
+        $this->assertEquals('Hello World', $result3);
 
-        $this->assertEquals('Hola llamando a hello()',$result4);
+        $this->assertEquals('Hola llamando a hello()', $result4);
 
-        $this->assertEquals("Hola llamando a $randomWord()",$result5);
+        $this->assertEquals("Hola llamando a $randomWord()", $result5);
 
     }
 }

@@ -1,6 +1,6 @@
 <?php
-namespace Properties\Varidic;
 
+namespace Properties\Varidic;
 
 class Items
 {

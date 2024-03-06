@@ -1,8 +1,8 @@
 <?php
 
 namespace Db;
-use Db\Drivers\DatabaseDriver;
 
+use Db\Drivers\DatabaseDriver;
 
 class Connection
 {
@@ -20,5 +20,4 @@ class Connection
     {
         return $this->driver->getName();
     }
-
 }

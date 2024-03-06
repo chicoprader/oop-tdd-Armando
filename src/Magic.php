@@ -1,5 +1,7 @@
 <?php
+
 namespace App;
+
 /*
  * Ejercicio
  * Implementar la clase Magic para que funcione el código de ejemplo
@@ -12,6 +14,7 @@ class Magic
 
     /**
      * Function queHayAmigos
+     *
      * @return string
      */
     public function queHayAmigos()
@@ -21,6 +24,7 @@ class Magic
 
     /**
      * Function nofunciona
+     *
      * @return string
      */
     public function nofunciona()
@@ -30,39 +34,36 @@ class Magic
 
     /**
      * Function hello
+     *
      * @param string|null
-     * @return string
      */
-    public function hello($palabra = null ):string
+    public function hello($palabra = null): string
     {
-        if ( !empty( $palabra ) ) {
+        if (! empty($palabra)) {
             return 'Hello World()';
-        }
-        else {
+        } else {
             return 'Hola llamando a hello';
         }
 
     }
+
     /**
      * Function randomWord
+     *
      * @param string|null
-     * @return string
      */
-    public function randomMethod($palabra = null ):string
+    public function randomMethod($palabra = null): string
     {
-        if ( !empty( $palabra ) ) {
+        if (! empty($palabra)) {
             return 'Hello World()';
-        }
-        else {
+        } else {
             return 'Hola llamando a $randomWord()';
         }
 
     }
+
     public function __call($name, $arguments)
     {
-        $this->randomMethod( $name );
+        $this->randomMethod($name);
     }
 }
-
-
-

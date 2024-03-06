@@ -4,5 +4,4 @@ namespace Db\Drivers;
 
 class Oracle
 {
-
 }
